@@ -10,6 +10,10 @@ def pass_gen(length=10):
 
 	return ''.join(password)
 
+
+print(pass_gen())
+
+
 def log_gen(leng=8):
 	loglist = "ASDFGHJKLXCVBNMERTYUIOwertyuiopcvbnmdfghjk"
 	login = []
