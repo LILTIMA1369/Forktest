@@ -11,3 +11,4 @@ def pass_gen(length=15):
 	return ''.join(password)
 
 print(pass_gen())
+
