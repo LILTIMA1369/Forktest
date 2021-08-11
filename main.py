@@ -9,5 +9,15 @@ def pass_gen(length=15):
 		password.append(char)
 
 	return ''.join(password)
+	
 
 print(pass_gen())
+
+
+login = ''
+for x in range(8): 
+    login = login + random.choice(list('1234567890abcdefghigklmnopqrstuvyxwzABCDEFOGHIGKLMNOPQRSTUVYXWZ')) 
+print(login)
+
+
+
