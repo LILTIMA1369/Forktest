@@ -17,8 +17,8 @@ def pass_gen2(length=15):
 	password = []
 
 	while len(password) < length:
-		char = random.choice(keylist2)
-		password.append(char)
+		char2 = random.choice(keylist2)
+		password.append(char2)
 
 	return ''.join(password)
 
