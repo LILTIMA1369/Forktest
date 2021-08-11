@@ -1,6 +1,7 @@
 8import random
 
 
+# Генератор поролей
 def pass_gen(length=15):
 	keylist = "0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
 	login = []
@@ -26,6 +27,19 @@ def pass_gen(length=10):
 		password.append(char2)
 
 	return ''.join(password)
+	
+
+print(pass_gen())
+
+# Генератор логина
+
+login = ''
+for x in range(8): 
+    login = login + random.choice(list('1234567890abcdefghigklmnopqrstuvyxwzABCDEFOGHIGKLMNOPQRSTUVYXWZ')) 
+print(login)
+
+
+
 
 
 print('Ваш пароль:', pass_gen2())
@@ -47,4 +61,5 @@ def log_gen(leng=8):
 a = pass_gen()
 b = log_gen()
 print(f'Ваш пароль: {a}, ваш логин: {b}')
+
 
