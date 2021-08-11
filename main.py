@@ -1,4 +1,5 @@
-import random
+8import random
+
 
 def pass_gen(length=15):
 	keylist = "0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
@@ -14,6 +15,10 @@ print('Ваш логин:', pass_gen())
 
 def pass_gen2(length=15):
 	keylist2 = "0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+
+def pass_gen(length=10):
+	keylist = "01234567qwertyuiofghjklzxcvbnmQWERTYUASDFGHJKLZXCVBNM"
+
 	password = []
 
 	while len(password) < length:
@@ -22,4 +27,24 @@ def pass_gen2(length=15):
 
 	return ''.join(password)
 
+
 print('Ваш пароль:', pass_gen2())
+
+
+print(pass_gen())
+
+
+def log_gen(leng=8):
+	loglist = "ASDFGHJKLXCVBNMERTYUIOwertyuiopcvbnmdfghjk"
+	login = []
+
+	while len(login) < leng:
+		log = random.choice(loglist)
+		login.append(log)
+
+	return ''.join(login)	
+
+a = pass_gen()
+b = log_gen()
+print(f'Ваш пароль: {a}, ваш логин: {b}')
+
